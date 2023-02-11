@@ -1,5 +1,6 @@
 import 'package:firebase_crud/createdata.dart';
 import 'package:firebase_crud/deletedata.dart';
+import 'package:firebase_crud/updatedata.dart';
 import 'package:firebase_crud/viewdata.dart';
 import 'package:flutter/material.dart';
 
@@ -80,17 +81,25 @@ class Home extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.transparent, shape: BoxShape.circle),
               ),
-              Container(
-                // color: Colors.amber,
-                height: 100,
-                width: 100,
-                decoration:
-                    BoxDecoration(color: Colors.red, shape: BoxShape.circle),
-                child: const Center(
-                    child: Text(
-                  'Update\nData',
-                  textAlign: TextAlign.center,
-                )),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: ((context) => const UpdateData())));
+                },
+                child: Container(
+                  // color: Colors.amber,
+                  height: 100,
+                  width: 100,
+                  decoration:
+                      BoxDecoration(color: Colors.red, shape: BoxShape.circle),
+                  child: const Center(
+                      child: Text(
+                    'Update\nData',
+                    textAlign: TextAlign.center,
+                  )),
+                ),
               ),
             ],
           ),

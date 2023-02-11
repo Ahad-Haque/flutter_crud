@@ -60,8 +60,3 @@ class _DeleteDataState extends State<DeleteData> {
     );
   }
 }
-
-void deletedata(id) {
-  FirebaseFirestore.instance.collection('shop').doc(id).delete();
-  //fluttertoast package can be used to show a popup
-}
