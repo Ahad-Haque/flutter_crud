@@ -1,4 +1,5 @@
 import 'package:firebase_crud/createdata.dart';
+import 'package:firebase_crud/createdataDemo.dart';
 import 'package:firebase_crud/deletedata.dart';
 import 'package:firebase_crud/updatedata.dart';
 import 'package:firebase_crud/viewdata.dart';
@@ -123,6 +124,45 @@ class Home extends StatelessWidget {
                   child: const Center(
                       child: Text(
                     'Delete\nData',
+                    textAlign: TextAlign.center,
+                  )),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                // color: Colors.amber,
+                height: 50,
+                width: 50,
+                decoration: BoxDecoration(
+                    color: Colors.transparent, shape: BoxShape.circle),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: ((context) => const CreateDemo())));
+                },
+                child: Container(
+                  // color: Colors.amber,
+                  height: 50,
+                  width: 50,
+                  decoration:
+                      BoxDecoration(color: Colors.lime, shape: BoxShape.circle),
+                  child: const Center(
+                      child: Text(
+                    'Demo\nData',
                     textAlign: TextAlign.center,
                   )),
                 ),

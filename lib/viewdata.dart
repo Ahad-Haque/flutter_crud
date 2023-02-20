@@ -28,7 +28,7 @@ class ViewData extends StatelessWidget {
                   return Card(
                     margin: const EdgeInsets.all(10),
                     child: ListTile(
-                      title: Text(documentSnapshot['name']),
+                      title: Text(documentSnapshot['name'].toString()),
                       subtitle: Text(documentSnapshot['price'].toString()),
                       trailing: Text(
                           'quantity: ${documentSnapshot['quantity'].toString()}'),
