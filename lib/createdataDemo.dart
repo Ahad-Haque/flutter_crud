@@ -73,7 +73,7 @@ class _CreateDemoState extends State<CreateDemo> {
               if (name.isNotEmpty && price.isNotEmpty && quantity.isNotEmpty) {
                 await addCollection(name, price, quantity);
                 _showPopup(context);
-                testingquery();
+                // testingquery();
               } else {
                 _showPopupfieldempty(context);
               }

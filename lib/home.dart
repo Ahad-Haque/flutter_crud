@@ -1,6 +1,7 @@
 import 'package:firebase_crud/createdata.dart';
 import 'package:firebase_crud/createdataDemo.dart';
 import 'package:firebase_crud/deletedata.dart';
+import 'package:firebase_crud/querytest.dart';
 import 'package:firebase_crud/updatedata.dart';
 import 'package:firebase_crud/viewdata.dart';
 import 'package:flutter/material.dart';
@@ -169,6 +170,45 @@ class Home extends StatelessWidget {
               ),
             ],
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                // color: Colors.amber,
+                height: 50,
+                width: 50,
+                decoration: BoxDecoration(
+                    color: Colors.transparent, shape: BoxShape.circle),
+              ),
+            ],
+          ),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   crossAxisAlignment: CrossAxisAlignment.center,
+          //   children: <Widget>[
+          //     GestureDetector(
+          //       onTap: () {
+          //         Navigator.push(
+          //             context,
+          //             MaterialPageRoute(
+          //                 builder: ((context) => const Querytest())));
+          //       },
+          //       child: Container(
+          //         // color: Colors.amber,
+          //         height: 50,
+          //         width: 50,
+          //         decoration:
+          //             BoxDecoration(color: Colors.cyan, shape: BoxShape.circle),
+          //         child: const Center(
+          //             child: Text(
+          //           'query\ntest',
+          //           textAlign: TextAlign.center,
+          //         )),
+          //       ),
+          //     ),
+          //   ],
+          // ),
         ],
       ),
     );
